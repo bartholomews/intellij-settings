@@ -13,7 +13,7 @@ def record(columns, dataRow) {
     else
         OUT
                 //.append(TABLE.getParent().getName()).append(".")
-                .append(TABLE.getName() == "limit" ? "invoiceables.limit" : TABLE.getName)
+                .append(TABLE.getName() == "toChange" ? "addingPrefix.toChange" : TABLE.getName)
     
     OUT.append(" (")
 
